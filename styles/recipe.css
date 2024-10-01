@@ -105,13 +105,20 @@
 
 .recipe__table {
 	border-collapse: collapse;
+	border-spacing: 16px;
 	text-align: left;
 	width: 100%;
 }
 
-.recipe__table-row th,
+.recipe__table-row th {
+	padding: var(--spacing-xs) 0;
+	padding-left: var(--spacing-lg);
+	border-bottom: 1px solid var(--color-stone-150);
+}
+
 .recipe__table-row td {
-	padding: var(--spacing-xs) var(--spacing-lg);
+	padding: var(--spacing-xs) 0;
+	padding-right: var(--spacing-lg);
 	border-bottom: 1px solid var(--color-stone-150);
 }
 
@@ -124,13 +131,4 @@
 .recipe__table-row:last-child td {
 	padding-bottom: 0;
 	border-bottom: 0;
-}
-
-.recipe__table-row th {
-	font-weight: var(--font-weight-regular);
-}
-
-.recipe__table-row td {
-	font-weight: var(--font-weight-bold);
-	color: var(--color-brown-800);
 }
