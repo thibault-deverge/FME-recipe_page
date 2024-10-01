@@ -78,6 +78,7 @@
 
 .recipe__list--preview {
 	li::marker {
+		font-size: 1rem;
 		color: var(--color-rose-800);
 	}
 }
@@ -112,6 +113,17 @@
 .recipe__table-row td {
 	padding: var(--spacing-xs) var(--spacing-lg);
 	border-bottom: 1px solid var(--color-stone-150);
+}
+
+.recipe__table-row:first-child th,
+.recipe__table-row:first-child td {
+	padding-top: 0;
+}
+
+.recipe__table-row:last-child th,
+.recipe__table-row:last-child td {
+	padding-bottom: 0;
+	border-bottom: 0;
 }
 
 .recipe__table-row th {

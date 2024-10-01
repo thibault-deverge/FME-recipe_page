@@ -2,17 +2,6 @@
 .pl-sm {
 	padding-left: var(--spacing-xs);
 }
-.pt-0 {
-	padding-top: 0;
-}
-.pb-0 {
-	padding-bottom: 0;
-}
-
-/* Border */
-.b-0 {
-	border: none;
-}
 
 /* Font Weight */
 .font-semibold {
