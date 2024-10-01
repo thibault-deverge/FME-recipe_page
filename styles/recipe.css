@@ -1,0 +1,124 @@
+.recipe {
+	background-color: var(--color-white);
+	padding: var(--spacing-xl);
+	border-radius: 24px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-huge);
+
+	@media (max-width: 41rem) {
+		padding: 0;
+		border-radius: 0px;
+	}
+}
+
+.recipe__image {
+	border-radius: 12px;
+
+	@media (max-width: 41rem) {
+		border-radius: 0px;
+	}
+}
+
+.recipe__content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-lg);
+
+	@media (max-width: 41rem) {
+		padding: 0 var(--spacing-lg);
+		padding-bottom: var(--spacing-xl);
+	}
+}
+
+.recipe__title {
+	font-family: var(--font-family-secondary);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-xxl);
+	line-height: var(--line-height-sm);
+	color: var(--color-stone-900);
+
+	@media (max-width: 41rem) {
+		font-size: 2.25rem;
+	}
+}
+
+.recipe__preview {
+	background-color: var(--color-rose-50);
+	padding: var(--spacing-md);
+	border-radius: 12px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-sm);
+}
+
+.recipe__preview-title {
+	font-weight: var(--font-weight-semibold);
+	font-size: var(--font-size-lg);
+	line-height: var(--line-height-sm);
+	color: var(--color-rose-800);
+}
+
+.recipe__list {
+	list-style-position: inside;
+	padding-left: var(--spacing-xxs);
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xxs);
+
+	li::marker {
+		font-size: var(--font-size-md);
+		font-weight: bold;
+		color: var(--color-brown-800);
+	}
+}
+
+.recipe__list--preview {
+	li::marker {
+		color: var(--color-rose-800);
+	}
+}
+
+.recipe__content-block {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md);
+}
+
+.recipe__heading {
+	font-family: var(--font-family-secondary);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-xl);
+	line-height: var(--line-height-sm);
+	color: var(--color-brown-800);
+}
+
+.recipe__divider {
+	height: 1px;
+	background-color: var(--color-stone-150);
+	border: none;
+}
+
+.recipe__table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+
+.recipe__table-row th,
+.recipe__table-row td {
+	padding: var(--spacing-xs) var(--spacing-lg);
+	border-bottom: 1px solid var(--color-stone-150);
+}
+
+.recipe__table-row th {
+	font-weight: var(--font-weight-regular);
+}
+
+.recipe__table-row td {
+	font-weight: var(--font-weight-bold);
+	color: var(--color-brown-800);
+}

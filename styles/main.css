@@ -1,0 +1,62 @@
+:root {
+	/* TYPOGRAPHY */
+	--font-family-primary: 'Outfit', sans-serif;
+	--font-family-secondary: 'Young Serif', serif;
+	--font-size-xxl: 2.5rem;
+	--font-size-xl: 1.75rem;
+	--font-size-lg: 1.25rem;
+	--font-size-md: 1rem;
+	--line-height-sm: 1;
+	--font-weight-regular: 400;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+
+	/* SPACING */
+	--spacing-xxs: 0.5rem;
+	--spacing-xs: 0.75rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 1.5rem;
+	--spacing-lg: 2rem;
+	--spacing-huge: 2.5rem;
+	--spacing-xl: 3rem;
+	--spacing-xxl: 8rem;
+
+	/* COLORS */
+	--color-rose-800: #7a284e;
+	--color-rose-50: #fff8fb;
+	--color-stone-900: #312e2c;
+	--color-stone-600: #5f564d;
+	--color-stone-150: #e3ddd7;
+	--color-stone-100: #f3e5d7;
+	--color-brown-800: #854632;
+	--color-white: #fff;
+
+	/* MEDIA QUERIES */
+	--media-mobile: 41rem;
+}
+
+body {
+	font-family: var(--font-family-primary);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-md);
+	color: var(--color-stone-600);
+	background-color: var(--color-stone-100);
+	min-height: 100vh;
+	padding: var(--spacing-xxl) var(--spacing-xl);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 41rem) {
+		padding: 0;
+	}
+}
+
+main {
+	max-width: min(46rem, 92%);
+
+	@media (max-width: 41rem) {
+		max-width: 100%;
+	}
+}
