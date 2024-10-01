@@ -4,6 +4,6 @@
 }
 
 /* Font Weight */
-.font-semibold {
-	font-weight: var(--font-weight-semibold);
+.font-bold {
+	font-weight: var(--font-weight-bold);
 }
