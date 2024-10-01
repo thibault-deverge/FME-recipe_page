@@ -1,6 +1,6 @@
 .recipe {
 	background-color: var(--color-white);
-	padding: var(--spacing-xl);
+	padding: var(--spacing-huge);
 	border-radius: 24px;
 
 	display: flex;
