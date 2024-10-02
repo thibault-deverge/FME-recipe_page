@@ -63,7 +63,7 @@
 
 .recipe__list {
 	list-style-position: outside;
-	padding-left: var(--spacing-lg);
+	padding-left: var(--spacing-md);
 
 	display: flex;
 	flex-direction: column;
